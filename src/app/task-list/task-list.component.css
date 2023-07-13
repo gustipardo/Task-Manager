@@ -1,0 +1,42 @@
+.list__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    /* background-color: antiquewhite; */
+    border-radius: 100px;
+    padding: 5px 20px 5px 10px;
+    border-color: rgb(54, 54, 54);
+    border-width: 2px;
+    border-style: solid;
+    width: fit-content;
+    margin: 10px 0px;
+}
+
+.task{
+    font-size: 1.8em;
+    user-select: none;
+}
+
+.checkbox{
+    margin: 0px 20px;
+    transform: scale(2);
+}
+
+
+
+.in-good-time{
+    background: #80ff80;
+}
+.time-to-do-it{
+    background: #66e0ff;
+}
+.urgent{
+    background: #ff8080;
+}

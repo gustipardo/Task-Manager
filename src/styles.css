@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "Roboto";
+    src: url('assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+html { background-color: #EDF9ED;
+    font-family: Roboto;
+    user-select: none;}
+
+    @import url('bulma/css/bulma.css');

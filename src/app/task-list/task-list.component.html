@@ -1,0 +1,9 @@
+<div class="list__container">
+
+<div class="container" [ngClass]="getClass(i)" *ngFor="let task of  Tasks; let i = index">
+    <input class="checkbox" type="checkbox" (change)="deleteTask(i)">
+    <p class="task">{{ task }}</p>
+</div>
+
+
+</div>

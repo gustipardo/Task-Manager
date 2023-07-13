@@ -1,0 +1,10 @@
+<div class="popup" (click)="handlecontainer($event)">
+    <div class="popup-content">
+        <label class="popup-content-label">Write your new task:</label>
+        <input type="text" class="popup-content-input" minlength="4" maxlength="50" [(ngModel)]="UserString">
+        <label>Date:</label>
+        <input type="date" class="popup-content-input" minlength="4" maxlength="50" [(ngModel)]="UserDate">
+        <p class="popup-content-error" *ngIf="error">The Task must be longer than 4 letters</p>
+        <button class="button is-primary" (click)="addTask()" >Add new task</button>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="container" #container>
+<h1 class="title is-1">{{title}}</h1>
+<p class="container-error2" *ngIf="error2">You have many tasks! Finish one before adding more</p>
+
+<app-task-list (myError)="setError()"></app-task-list>
+<button class="button is-primary" (click)="showPopup()">Add Task</button>
+
+<app-new-task *ngIf="Popup" (myBoolean)="hidePopup($event)"></app-new-task>
+
+</div>
